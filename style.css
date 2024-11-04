@@ -4,9 +4,10 @@
   font-family: Orbitron;
   text-decoration: none;
   border: none;
+  box-sizing: border-box;
 }
 
-html {
+body {
   background: linear-gradient(
     180deg,
     #010208 16.39%,
@@ -36,8 +37,10 @@ h5 {
 }
 
 .container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1520px;
+  margin-inline: auto;
+  padding-inline: 40px;
 }
 
 #header {
@@ -208,6 +211,7 @@ h5 {
   padding-block: 50px 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 23px;
 }
 
@@ -284,12 +288,7 @@ h5 {
 }
 
 .worc {
-  max-width: 500px;
-  width: 100%;
-}
-
-.worc img {
+  padding-block: 40px;
   display: flex;
-
-  padding: 20px 80px;
+  justify-content: center;
 }
